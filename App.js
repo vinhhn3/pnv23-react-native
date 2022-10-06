@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import Task from "./components/Task";
 
 export default function App() {
     const [name, setName] = useState("");
@@ -8,7 +9,12 @@ export default function App() {
         <View style={styles.container}>
             <View style={styles.taskWrapper}>
                 <Text style={styles.sectionTitle}>Today's tasks</Text>
-                <View style={styles.items}></View>
+                <View style={styles.items}>
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                </View>
             </View>
         </View>
     );
