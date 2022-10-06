@@ -6,7 +6,10 @@ export default function App() {
 
     return (
         <View style={styles.container}>
-            <Text>Hello World</Text>
+            <View style={styles.taskWrapper}>
+                <Text style={styles.sectionTitle}>Today's tasks</Text>
+                <View style={styles.items}></View>
+            </View>
         </View>
     );
 }
@@ -14,26 +17,15 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#fff",
-        justifyContent: "center",
-        alignItems: "center",
+        backgroundColor: "#E8EAED",
     },
-    text: {
-        color: "#FF0000", // Red color
-        fontSize: 50,
-        fontStyle: "italic",
-        alignItems: "center",
+    taskWrapper: {
+        paddingTop: 80,
+        paddingHorizontal: 20,
     },
-    item: {
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    input: {
-        width: 300,
-        height: 50,
-        borderWidth: 2,
-        borderRadius: 20,
-        borderColor: "#FF0000",
-        textAlign: "center",
+    items: {},
+    sectionTitle: {
+        fontSize: 24,
+        fontWeight: "bold",
     },
 });
