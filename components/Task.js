@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const Task = () => {
+const Task = (props) => {
     return (
         <View>
-            <Text>Task</Text>
+            <Text>{props.text}</Text>
         </View>
     );
 };
